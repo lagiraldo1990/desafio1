@@ -1,0 +1,18 @@
+.encabezado{
+    background-color: hsla(217, 85%, 55%, 0.924);
+    padding: 50px;
+    border: none;
+}
+
+.encabezado__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.encabezado__logoAlura{
+    padding-left: 2rem;
+    width: 6.5vw;;
+}
+
+

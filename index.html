@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <enlace rel="preconectar" href="https://fonts.googleapis.com">
+        <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+        <enlace href="https: //fonts.googleapis.com/css2? family= Inter+Tight:ital@1 & display=swap" rel="stylesheet">
+        <title>Encritador</title>
+        <link rel="stylesheet" href="./css/encabezado.css">
+        <link rel="stylesheet" href="/css/area-encriptacion.css">
+        <link rel="stylesheet" href="/css/encriptacion-entrada.css">
+        <link rel="stylesheet" href="/css/encriptacion-salida.css">
+        <link rel="stylesheet" href="/css/rodapie.css">
+    </head>
+    <body>
+       <header class="encabezado">
+          <div class="encabezado__container" >
+             <img class="encabezado__alura" src="/img/alura.jpg" alt="alura">
+          </div>
+       </header>
+       <main class="areaEncriptacion">
+          <div class="areaEncriptacion__container">
+             <section class="areaEncriptacion-entrada">
+                 <textarea class="areaEncriptacion-entrada__textoIngresado" cols="60" rows="13" placeholder="Ingrese el texto a qui" onkeypress="return validar(event)"></textarea>
+                 <div class="areaAdvertencia">
+                     <h2 class="areaAdvertencia__texto">Solo letras minúsculas y sin acentos</h2>
+                 </div>
+                 <div class="areaEncriptacion-entrada__botonesContainer">
+                     <button class="areaEncriptacion-entrada__boton--encriptar boton" onclick="botonEncriptar()">Encriptar</button>
+                     <button class="areaEncriptacion-entrada__boton--desencriptar boton" onclick="botonDesencriptar()">Desencriptar</button>
+                 </div>
+              </section>
+              <section class ="areaEncriptacion-salida">
+                  <img class="areaEncriptacion-salida__imagen" src="/img/imagen.png" alt="imagen de dibujo">
+                  <div class="areaEncriptacion-salida__notas">
+                     <p class="areaEncriptacion-salida__notas--nota1">Ningún mensaje fue encontrado</p>
+                     <p class="areaEncriptacion-salida__notas--nota2">Ingresa el texto que desees encriptar o desencriptar</p> 
+                  </div>
+                  <textarea class="areaEncriptacion-salida__textoResultante" cols="25" rows="14"></textarea>
+                  <div class ="areaEncriptacion-salida__copia">
+                     <button class="areaEncriptacion-salida__boton--copiar boton" onclick="botonCopiar()">Copiar</button>
+                  </div>
+              </section>  
+            </div>
+        </main>
+        <footer class="rodapie">
+            <p class="rodapie__copyright descripcion">&copy Encriptador & Desencriptador Alura 2023</p>
+            <p class="rodapie__texto descripcion">Realisado por Luis alejandro Aristizabal</p>
+            <div class="rodapie__contacto">
+                <a href="https://github.com/lagiraldo1990"><img class="rodapie__logoGithub" src="/img/logo-Github.png" alt="Logo de Git hub"></a>
+                <a href="https://www.linkedin.com/in/alejandro-aristizabal-9b5900258/"><img class="rodapie__logoLinkedin" src="/img/logo-linkedin.png" alt="Logo de LinkedIn"></a>
+            </div>
+        </footer>
+        <script src="./encriptador.js"></script>
+    </body>
+</html>
