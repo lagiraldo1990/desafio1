@@ -1,5 +1,5 @@
 .rodapie{
-    background-color: rgb(4, 29, 83);
+    background-color: #f3f5fc ;
     padding: 0.28rem 0;
     display: flex;
     vertical-align: middle;
@@ -9,7 +9,7 @@
 
 .descripcion{
     font-family: 'Basic', sans-serif;
-    color: #cfdbfd;
+    color: black;
     text-align: center;
     font-size: 0.95rem;
 }
@@ -23,11 +23,13 @@
     width: 2.3rem;
     margin-right: 1.3vw;
     margin-top: 0.2rem;
+    background-color: black;
 }
 
 .rodapie__logoLinkedin{
     width: 3rem;
     margin-right: 0.8vw;
+    background-color: black;
 }
 
 @media screen and (max-width: 375px){

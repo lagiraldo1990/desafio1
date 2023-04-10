@@ -1,7 +1,7 @@
 .encabezado{
-    background-color: hsla(217, 85%, 55%, 0.924);
+    background-color: #f3f5fc;
     padding: 50px;
-    border: none;
+    border:none;
 }
 
 .encabezado__container{
@@ -10,9 +10,11 @@
     justify-content: space-between;
 }
 
-.encabezado__logoAlura{
-    padding-left: 2rem;
-    width: 6.5vw;;
+.encabezado__alura{
+    height: 80px;
+    width: 25px;
+   
+ 
 }
 
 
